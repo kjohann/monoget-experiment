@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1591;1573</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>kjohann</Authors>
+    <PackageDescription>
+      Such description. Much wow.
+    </PackageDescription>
+    <PackageProjectUrl>https://www.example.com</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kjohann/monoget-experiment</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>awsomeness;legendary</PackageTags>
+    <Copyright>Team Rubberduck</Copyright>
+  </PropertyGroup>  
+
+</Project>

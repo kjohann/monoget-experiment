@@ -1,0 +1,20 @@
+name: GitHub Actions Demo
+run-name: Building PackageOne 🚀
+on:
+  push:
+    branches:
+    - '**'
+    paths:
+    - PackageOne
+    - .github/workflows/packageone.yml
+    - build.ps1
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Run build.ps1
+        shell: pwsh
+        run: ./build.ps1 -PackageName PackageOne -Branch ${{ github.ref }} -BuildNumber ${{ github.run_number }} -GithubToken ${{ github.token }}
+       
